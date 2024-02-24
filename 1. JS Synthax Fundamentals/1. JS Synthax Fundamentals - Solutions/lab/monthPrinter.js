@@ -17,7 +17,7 @@ function monthPrinter(monthAsANumber) {
         console.log('August');
     } else if (monthAsANumber === 9) {
         console.log('September');
-    }else if (monthAsANumber === 10) {
+    } else if (monthAsANumber === 10) {
         console.log('October');
     } else if (monthAsANumber === 11) {
         console.log('November');
