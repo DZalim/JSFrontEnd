@@ -16,7 +16,6 @@ function revealWords(words, text) {
 
     console.log(textArray.join(' '))
 
-
 }
 
 revealWords('great, learning',
