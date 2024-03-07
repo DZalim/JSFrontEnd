@@ -1,13 +1,9 @@
-function charactersInRange(startSymbol, lastSymbol) {
+function charactersInRange(firstSymbol, secondSymbol) {
   let result = "";
-  let start = startSymbol.charCodeAt(); //ord in python
-  let end = lastSymbol.charCodeAt();
+  let start = Math.min(firstSymbol.charCodeAt(), secondSymbol.charCodeAt()); //ord in python
+  let end = Math.max(firstSymbol.charCodeAt(), secondSymbol.charCodeAt());
 
-  for (
-    let currentCode = Math.min(start, end) + 1;
-    currentCode < Math.max(start, end);
-    currentCode++
-  ) {
+  for (let currentCode = start + 1; currentCode < end; currentCode++) {
     let currentChar = String.fromCharCode(currentCode); //chr in python
     result += `${currentChar} `;
   }
