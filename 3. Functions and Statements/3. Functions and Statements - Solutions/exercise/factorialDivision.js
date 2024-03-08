@@ -1,5 +1,5 @@
 function factorialDivision(firstNum, secondNum) {
-
+    
   function calculateFactorial(number) {
     let result = 1;
 
